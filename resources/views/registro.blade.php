@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no">
 
 
-    <title>Formulario de registro</title>
+    <title>Registro</title>
     <link rel="stylesheet" href="CSS/registro.css">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -25,9 +25,110 @@ require_once('plantilla/menu.php');
 
     <div class="container">
 
-    
-        <div class="container">
-          <h4>FORMULARIO DE REGISTRO</h4>
+      <?php
+
+    $registroCorrecto=0;
+      $usuario=[
+        'nombres' => '',
+        'email'=> '',
+        'apellido' => '',
+        'password' => '',
+        'confirmacion' => '',
+        'avatar'=>''
+      ];
+
+      $errores=[
+        'nombres' => '',
+        'email'=> '',
+        'apellido' => '',
+        'password' => '',
+        'confirmacion' => '',
+        'avatar' => ''
+      ];
+      $errorEmail='';
+     if($_POST){
+       if (isset($_FILES) && isset($_FILES['avatar']) && $_FILES['avatar']['error'] === 0) {
+
+           $ext = pathinfo($_FILES['avatar']['name'], PATHINFO_EXTENSION);
+
+           if ($ext != 'png' && $ext != 'jpg' && $ext != 'jpeg') {
+               $errorAvatar = 'archivo de formato invalido';
+           } else {
+               $usuario['avatar'] = $_POST['email'] . '.' . $ext;
+
+               move_uploaded_file($_FILES['avatar']['tmp_name'], 'avatars/' . $usuario['avatar']);
+           }
+       }
+         if($_POST['nombres']!=''){
+           $usuario['nombres'] = $_POST['nombres'];
+         }
+         else{
+           $errores['nombres']="El nombre no puede estar vacío";
+
+         }
+         if(isset($_POST['apellido']) && $_POST['apellido']!=''){
+           $usuario['apellido'] = $_POST['apellido'];
+         }
+         else{
+           $errores['apellido']="El apellido no puede estar vacío";
+         }
+         if(isset($_POST['email'])!=''){
+
+           $usuario['email'] = $_POST['email'];
+
+
+           $archivo=FILE_GET_CONTENTS('usuario.json');
+           $usuarios=json_decode($archivo,true);
+           foreach($usuarios as $emailRegistrado){
+             if($emailRegistrado['email']==$usuario['email']){
+               $errores['email']='El email ya se encuentra registrado';
+
+             }
+           }
+
+         }
+         else {
+          $errores['email']="Ingrese un email";
+         }
+        if(isset($_POST['password'])!=''){
+          $usuario['password'] = $_POST['password'];
+        }
+        else {
+         $errores["password"]="La contraseña no puede estar vacía";
+        }
+        if(isset($_POST['confirmacion'])!=''){
+          $usuario['confirmacion'] = $_POST['confirmacion'];
+        }
+        else {
+          $errores["password"]= "Confirme su contraseña";
+        }
+        if(isset($_POST['password']) != isset($_POST['confirmacion'])){
+          $errores["password"]="Las contraseñas no coinciden";
+        }
+        if($errores['nombres']==""&&$errores['apellido']==""&&$errores['email']==""&&$errores['password']==""){
+
+
+         $hash1=password_hash($usuario['password'],PASSWORD_DEFAULT);
+         $usuario['password']=$hash1;
+
+
+
+         $usuarios[] = $usuario;
+         $registroCorrecto = 1;
+         $json=json_encode($usuarios);
+         FILE_PUT_CONTENTS('usuario.json',$json);
+    }
+    }
+         ?>
+
+
+
+
+
+        <?php  ?>
+
+        <div class="container"><br>
+          <h4>REGISTRO</h4>
 
           <form class="" action="registro.php" method="post" enctype="multipart/form-data">
             <div class="error"><?php echo $errores['nombres']; ?></div>
