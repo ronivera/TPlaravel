@@ -9,8 +9,8 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/stylos.css">
-    <link rel="stylesheet" href="CSS/carrito.css">
+    <link rel="stylesheet" href="/CSS/stylos.css">
+    <link rel="stylesheet" href="/CSS/carrito.css">
 
 </head>
 <body>
@@ -22,7 +22,7 @@
   <nav class="navbar navbar-light navbar-5 white">
 
     <!-- Navbar brand -->
-    <a class="navbar-brand"> <img src="img/logo.png" alt="logo"> </a>
+    <a class="navbar-brand"> <img src="/img/logo.png" alt="logo"> </a>
 
     <!-- Collapse button -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15"
@@ -51,7 +51,7 @@
           <a class="nav-link" href="contacto.php">Contacto</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="registro.php">Registro</a>
+          <a class="nav-link" href="/registro.php">Registro</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="login.php">Iniciar sesion</a>
@@ -77,10 +77,10 @@
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
    <div class="carousel-inner">
      <div class="carousel-item active">
-       <img src="img/foto.png" class="d-block w-100" alt="portada1">
+       <img src="/img/foto.png" class="d-block w-100" alt="portada1">
      </div>
      <div class="carousel-item">
-       <img src="img/foto2.png" class="d-block w-100" alt="portada3">
+       <img src="/img/foto2.png" class="d-block w-100" alt="portada3">
      </div>
    </div>
    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -100,21 +100,21 @@
     <div class="row">
       <div class="col">
         <form class="" action="carrito.php" method="get">
-        <img src="img/imagen 2.png" alt="producto"><br>
+        <img src="/img/imagen 2.png" alt="producto"><br>
         <button type="submit" class="btn btn-primary btn-lg">Comprar</button>
 
       </div>
       <div class="col">
-        <img src="img/imagen3.png" alt="producto"><br>
+        <img src="/img/imagen3.png" alt="producto"><br>
         <button type="submit" class="btn btn-primary btn-lg">Comprar</button>
       </div>
       <div class="w-100"></div>
       <div class="col">
-        <img src="img/imagen4.png" alt="producto"><br>
+        <img src="/img/imagen4.png" alt="producto"><br>
         <button type="submit" class="btn btn-primary btn-lg">Comprar</button>
       </div>
       <div class="col">
-        <img src="img/imagen5.png" alt="producto"><br>
+        <img src="/img/imagen5.png" alt="producto"><br>
         <button type="submit" class="btn btn-primary btn-lg">Comprar</button>
         </form>
       </div>
@@ -137,7 +137,7 @@
 
 
             <div class="img-logo">
-              <a href="index.php"><img src="img/logo.png" alt=""></a>
+              <a href="index.php"><img src="/img/logo.png" alt=""></a>
 
             </div>
 

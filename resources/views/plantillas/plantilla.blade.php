@@ -72,7 +72,9 @@
 
 
 </header>
+<section>
 
+</section>
   <section>
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
    <div class="carousel-inner">
@@ -92,7 +94,7 @@
      <span class="sr-only">Next</span>
    </a>
   </div>
-
+</section>
 
   <h1 class="title">Productos</h1>
 
@@ -120,6 +122,8 @@
       </div>
     </div>
   </div>
+</section>
+
   <?php
   $seLogeo = isset($_SESSION);
     ?>
@@ -131,7 +135,6 @@
       <link rel="stylesheet" href="fontawesome-free-5.10.1-web/css/all.css">
       <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     </head>
-  </section>
     <body>
 
         <footer>
