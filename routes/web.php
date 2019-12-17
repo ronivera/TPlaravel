@@ -1,5 +1,6 @@
 <?php
 
+
 Route::get('/registro', function () {
     return view('registro');
 });

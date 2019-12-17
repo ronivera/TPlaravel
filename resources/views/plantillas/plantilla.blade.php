@@ -15,14 +15,14 @@
 
 </head>
 <header>
-<div class="container">
+<div class="container-menu">
 
 
   <!--Navbar-->
   <nav class="navbar navbar-light navbar-5 white">
 
     <!-- Navbar brand -->
-    <a class="navbar-brand"> <img src="img/logo.png" alt="logo"> </a>
+    <a class="logo"> <img src="img/logo.png" alt="logo"> </a>
 
     <!-- Collapse button -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15"
