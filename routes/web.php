@@ -15,3 +15,6 @@ Route::get('/contacto','perfil@mostrarContacto');
 Route::get('/preguntas',function(){
   return view('preguntas');
 });
+Route::get('/carrito',function(){
+  return view('carrito');
+});
