@@ -1,4 +1,5 @@
-
+@extends('plantillas/plantilla')
+@section('contenido')
 <!doctype html>
  <html class="no-js" lang="zxx">
  <head>
@@ -36,7 +37,7 @@
          			<div class="col-lg-8 col-12">
          				<div class="contact-form-wrap">
          					<h2 class="contact__title">Dejanos tu mensaje.</h2>
-
+@csrf
                              <form id="contact-form" action="#" method="post">
                                  <div class="single-contact-form space-between">
  																	<input type="text" value='<?=$firstname ?? '' ?>' name="firstname" placeholder="Nombre*"><br>
@@ -102,6 +103,6 @@
          		</div>
          	</div>
          </section>
-
+@endsection
  </body>
  </html>

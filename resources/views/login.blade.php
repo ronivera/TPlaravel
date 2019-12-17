@@ -1,4 +1,5 @@
-
+@extends('plantillas/plantilla')
+@section('contenido')
 
 
  <!doctype html>
@@ -21,10 +22,6 @@
   </head>
   <body>
 
-<?php
-require_once('plantilla/header.php');
-require_once('plantilla/menu.php');
- ?>
 <br>
           <div class="ht__bradcaump__area bg-image--3">
               <div class="container">
@@ -42,20 +39,7 @@ require_once('plantilla/menu.php');
     <div class="container">
 
 
-      <?php
-      if($_POST){
-      if($_SESSION['selogeo']!=true && empty($errores)){
-      echo "email o contraseña invalida";
-    }
-    else{
-      foreach($errores as $error){
-        echo $error;
-        echo '<br>';
-      }
-  }
-  echo '<br>';
-}
-       ?>
+@csrf
       <form class="" action="login.php" method="post" enctype="multipart/form-data">
       <input class="controles" type="email" name="email" value="" placeholder="Ingrese su correo electronico">
       <input class="controles" type="password" name="password" value="" placeholder="Ingrese su contraseña">
@@ -68,9 +52,8 @@ require_once('plantilla/menu.php');
     </div>
 
 
-   <?php
-require_once('plantilla/footer.php');
-    ?>
+
 
  </body>
  </html>
+ @endsection

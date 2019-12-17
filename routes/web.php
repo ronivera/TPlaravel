@@ -11,3 +11,6 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('contacto','perfil@mostrarContacto');
+
+Route::get('/login', 'Login@devolverVista');
+Route::post('/login', 'Login@validarDatos');
