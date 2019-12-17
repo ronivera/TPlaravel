@@ -47,7 +47,7 @@
       <label for="">Mantenerme logueado</label>
       <button class="" type="submit" class="btn btn-secondary btn-sm">Login</button>
       </form>
-      <p>No tienes cuenta? <a class="link" href="registro.php">Registrate</a></a> </p>
+      <p>No tienes cuenta? <a class="link" href="/registro">Registrate</a></a> </p>
 
     </div>
 

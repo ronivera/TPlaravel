@@ -1,37 +1,5 @@
 @extends('plantillas/plantilla')
-@section('padre')
-<body>
-		<header id="wn__header" class="oth-page header__area header__absolute sticky__header">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-md-4 col-sm-4 col-7 col-lg-2">
-						<div class="logo">
-							<a href="index.php">
-							</a>
-						</div>
-					</div>
-					<div class="col-lg-8 d-none d-lg-block">
-						<nav class="mainmenu__nav">
-
-						</nav>
-									</div>
-								</li>
-
-
-		</header>
-
-
-        <div class="ht__bradcaump__area bg-image--4">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="bradcaump__inner text-center">
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+@section('contenido')
 
 		<section class="wn__faq__area bg--white pt--80 pb--60">
 			<div class="container">
@@ -129,5 +97,4 @@
 				</div>
 			</div>
 		</section>
-
-	
+@endsection

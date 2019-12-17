@@ -1,7 +1,6 @@
-<?php
-require_once('plantilla/header.php');
-require_once('plantilla/menu.php');
- ?>
+@extends('plantillas/plantilla')
+@section('contenido')
+
  <br>
  <h2 class="carrito">Carrito de Compras</h2>
  <br>
@@ -11,14 +10,4 @@ require_once('plantilla/menu.php');
 
 
 
-
-
-
-
-
-
-
-
- <?php
- require_once('plantilla/footer.php');
-  ?>
+@endsection

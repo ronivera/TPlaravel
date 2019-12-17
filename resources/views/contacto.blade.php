@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @extends('plantillas/plantilla')
 @section('contenido')
 <!doctype html>
@@ -15,6 +16,9 @@
   <link rel="stylesheet" href="/CSS/stylos.css">
   <link rel="stylesheet" href="/CSS/login.css">
  </head>
+=======
+
+>>>>>>> a8705d04d3bb9d65bc1c0d74642e86e1204438a0
 
          <div class="ht__bradcaump__area bg-image--6">
              <div class="container">
@@ -103,6 +107,9 @@
          		</div>
          	</div>
          </section>
+<<<<<<< HEAD
 @endsection
  </body>
  </html>
+=======
+>>>>>>> a8705d04d3bb9d65bc1c0d74642e86e1204438a0

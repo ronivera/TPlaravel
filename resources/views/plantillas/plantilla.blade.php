@@ -49,19 +49,19 @@
       <!-- Links -->
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="index.php">Home</a>
+          <a class="nav-link" href="/index">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="contacto.php">Contacto</a>
+          <a class="nav-link" href="/contacto">Contacto</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/">Registro</a>
+          <a class="nav-link" href="/registro">Registro</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="login.php">Iniciar sesion</a>
+          <a class="nav-link" href="/login">Iniciar sesion</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="preguntas.php">Preg.frecuentes</a>
+          <a class="nav-link" href="/preguntas">Preg.frecuentes</a>
         </li>
       </ul>
       <!-- Links -->

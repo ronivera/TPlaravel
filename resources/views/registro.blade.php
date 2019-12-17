@@ -26,7 +26,7 @@
               <input type="file"  id="avatar" name="avatar">
             </div>
             <button class="boton" type="submit" class="btn btn-secondary btn-sm">Registrar</a></button>
-            <p>Ya estás registrado? <a class="link" href="login.php">Iniciar sesión</a></a> </p>
+            <p>Ya estás registrado? <a class="link" href="/login">Iniciar sesión</a></a> </p>
 
 
 

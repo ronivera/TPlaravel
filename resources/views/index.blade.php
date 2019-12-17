@@ -33,19 +33,23 @@
         <form class="" action="carrito.php" method="get">
         <img src="img/imagen 2.png" alt="producto"><br>
         <button type="submit" class="btn btn-primary btn-lg">Comprar</button>
+        <span>$350,00</span>
 
       </div>
       <div class="col-md-3">
         <img src="img/1.png" alt="producto"><br>
         <button type="submit" class="btn btn-primary btn-lg">Comprar</button>
+        <span>$325,00</span>
       </div>
       <div class="col-md-3">
         <img src="img/3.png" alt="producto"><br>
         <button type="submit" class="btn btn-primary btn-lg">Comprar</button>
+        <span>$150,00</span>
       </div>
       <div class="col-md-3">
         <img src="img/12.png" alt="producto"><br>
         <button type="submit" class="btn btn-primary btn-lg">Comprar</button>
+        <span>$260,00</span>
       </div>
 
 
@@ -53,18 +57,22 @@
       <div class="col-md-3">
         <img src="img/9.png" alt="producto"><br>
         <button type="submit" class="btn btn-primary btn-lg">Comprar</button>
+        <span>$123,00</span>
       </div>
       <div class="col-md-3">
         <img src="img/8.png" alt="producto"><br>
         <button type="submit" class="btn btn-primary btn-lg">Comprar</button>
+        <span>$400,00</span>
            </div>
            <div class="col-md-3">
            <img src="img/6.png" alt="producto"><br>
            <button type="submit" class="btn btn-primary btn-lg">Comprar</button>
+           <span>$235,00</span>
               </div>
               <div class="col-md-3">
               <img src="img/7.png" alt="producto"><br>
               <button type="submit" class="btn btn-primary btn-lg">Comprar</button>
+              <span>$321,00</span>
                  </div>
         </form>
     </div>
@@ -77,19 +85,22 @@
          <form class="" action="carrito.php" method="get">
          <img src="img/20.png" alt="producto"><br>
          <button type="submit" class="btn btn-primary btn-lg">Comprar</button>
-
+          <span>$342,00</span>
        </div>
        <div class="col-md-3">
          <img src="img/21.png" alt="producto"><br>
          <button type="submit" class="btn btn-primary btn-lg">Comprar</button>
+         <span>$532,00</span>
        </div>
        <div class="col-md-3">
          <img src="img/22.png" alt="producto"><br>
          <button type="submit" class="btn btn-primary btn-lg">Comprar</button>
+         <span>$320,00</span>
        </div>
        <div class="col-md-3">
          <img src="img/23.png" alt="producto"><br>
          <button type="submit" class="btn btn-primary btn-lg">Comprar</button>
+         <span>$325,00</span>
        </div>
 
 
@@ -97,18 +108,22 @@
        <div class="col-md-3">
          <img src="img/29.png" alt="producto"><br>
          <button type="submit" class="btn btn-primary btn-lg">Comprar</button>
+         <span>$123.00</span>
        </div>
        <div class="col-md-3">
          <img src="img/30.png" alt="producto"><br>
          <button type="submit" class="btn btn-primary btn-lg">Comprar</button>
+         <span>$345,00</span>
             </div>
             <div class="col-md-3">
             <img src="img/34.png" alt="producto"><br>
             <button type="submit" class="btn btn-primary btn-lg">Comprar</button>
+            <span>$353,00</span>
                </div>
                <div class="col-md-3">
                <img src="img/35.png" alt="producto"><br>
                <button type="submit" class="btn btn-primary btn-lg">Comprar</button>
+               <span>$321,00</span>
                   </div>
          </form>
      </div>
